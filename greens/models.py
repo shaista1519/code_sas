@@ -4,5 +4,6 @@ from django.db import models
 class items(models.Model):
     name = models.CharField(max_length=100)
     img = models.ImageField(upload_to='pics')
-    price = models.IntegerField()
-    offer = models.BooleanField(default=False)
+    price = models.CharField(max_length=100)
+    offer = models.BooleanField(default=False) 
+
